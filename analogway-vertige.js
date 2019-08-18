@@ -1,7 +1,7 @@
 /*
 Vertige Module Notes:
 -- you must first enable the TPP server on the console:
-    -- press the gear icon at top right, select TPP server, choose LAN adapter, default port is 10600
+-- press the gear icon at top right, select TPP server, choose LAN adapter, default port is 10600
 
 */
 var tcp = require('../../tcp');
@@ -151,7 +151,7 @@ instance.prototype.destroy = function() {
 		self.socket.destroy();
 	}
 
-	debug("destroy", self.id);;
+	debug("destroy", self.id);
 };
 
 instance.prototype.actions = function(system) {
@@ -178,7 +178,7 @@ instance.prototype.actions = function(system) {
 				id: 'ld_pst_dest',
 				default: '1',
 				choices: [
-					{id: '0', label: 'PROGRAM' },
+					{id: '0', label: 'Program' },
 					{id: '1', label: 'Preview' }
 				]
 			}]
@@ -202,8 +202,8 @@ instance.prototype.actions = function(system) {
 				id: 'ld_tmp_dest',
 				default: '1',
 				choices: [
-					{id: '0', label: 'PROGRAM' },
-					{id: '1', label: 'preview' }
+					{id: '0', label: 'Program' },
+					{id: '1', label: 'Preview' }
 				]
 			}]
 		},
@@ -239,13 +239,13 @@ instance.prototype.actions = function(system) {
 				id: 'ld_source_dest',
 				default: '1',
 				choices: [
-					{id: '0', label: 'PROGRAM' },
-					{id: '1', label: 'preview' }
+					{id: '0', label: 'Program' },
+					{id: '1', label: 'Preview' }
 				]
 			}]
 
 		}
-		
+
 	})
 }
 
@@ -255,7 +255,7 @@ instance.prototype.action = function(action) {
 	var cmd = '';
 
 	switch(action.action) {
-	
+
 	case 'loadpreset': // <destination>,<pset_number>, 1PRloa
 		cmd = '' + action.options.ld_pst_dest + ',' + (parseInt(action.options.ld_pst_pst_number) -1 ) + ',1PRloa';
 		//console.log ('loading preset -- command = ' + cmd );
