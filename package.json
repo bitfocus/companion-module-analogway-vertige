@@ -16,5 +16,14 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Tim Terry",
-	"license": "MIT"
+	"license": "MIT",
+	"homepage": "https://github.com/bitfocus/companion-module-analogway-vertige#readme",
+	"bugs": {
+		"url": "https://github.com/bitfocus/companion-module-analogway-vertige/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitfocus/companion-module-analogway-vertige.git"
+	},
+	"api_version": "1.0.0"
 }
